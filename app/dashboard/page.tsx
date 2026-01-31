@@ -23,6 +23,7 @@ export default function ProductsPage() {
   const itemsPerPage = 6;
 
   console.log("products", products);
+  console.log("filtered", filtered);
 
   // data fetch
   useEffect(() => {
