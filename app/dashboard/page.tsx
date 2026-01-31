@@ -22,6 +22,8 @@ export default function ProductsPage() {
 
   const itemsPerPage = 6;
 
+  console.log("products", products);
+
   // data fetch
   useEffect(() => {
     console.log("System: Starting product synchronization...");
