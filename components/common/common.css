@@ -109,31 +109,30 @@ main {
   table-layout: fixed;
 }
 
-/* കോളങ്ങളുടെ വിഡ്ത്ത് റേഷ്യോ (ഇത് ഡെസ്ക്ടോപ്പിനും മൊബൈലിനും ഗുണകരമാണ്) */
 .custom-table th:nth-child(1),
 .custom-table td:nth-child(1) {
   width: 250px;
-} /* Product Info */
+}
 .custom-table th:nth-child(2),
 .custom-table td:nth-child(2) {
   width: 350px;
-} /* Description */
+}
 .custom-table th:nth-child(3),
 .custom-table td:nth-child(3) {
   width: 140px;
-} /* Category */
+}
 .custom-table th:nth-child(4),
 .custom-table td:nth-child(4) {
   width: 100px;
-} /* Price */
+}
 .custom-table th:nth-child(5),
 .custom-table td:nth-child(5) {
   width: 100px;
-} /* Rating */
+}
 .custom-table th:nth-child(6),
 .custom-table td:nth-child(6) {
   width: 100px;
-} /* Status */
+}
 
 .product-img-box {
   flex-shrink: 0 !important;
@@ -164,7 +163,7 @@ main {
   table-layout: fixed;
 }
 
-/* ---  Spinner Animation --- */
+/* spinner animation */
 .custom-spinner {
   animation: rotate 2s linear infinite;
   width: 40px;

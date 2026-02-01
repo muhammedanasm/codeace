@@ -1,4 +1,3 @@
-/* Sidebar Container Layout */
 .sidebar-container {
   display: flex;
   flex-direction: column;
@@ -6,22 +5,17 @@
   top: 0;
   height: 100vh;
   transition: all 0.3s ease-in-out;
-  background: linear-gradient(
-    180deg,
-    #111827 0%,
-    #0f172a 100%
-  ); /* Your Original */
-  border-right: 1px solid rgba(255, 255, 255, 0.05); /* Your Original */
-  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1); /* Your Original */
+  background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-/* മൊബൈൽ കണ്ട്രോൾസ് */
 .mobile-hide {
-  transform: translateX(-100%); /* മൊബൈലിൽ സൈഡിലേക്ക് ഒളിപ്പിച്ചു വെക്കുന്നു */
+  transform: translateX(-100%);
 }
 
 .mobile-show {
-  transform: translateX(0); /* ക്ലിക്ക് ചെയ്യുമ്പോൾ മുന്നിലേക്ക് വരുന്നു */
+  transform: translateX(0);
   height: 100%;
   z-index: 9;
 }
@@ -33,9 +27,6 @@
   }
 } */
 
-/* ഡെസ്ക്ടോപ്പ് സെറ്റപ്പ് (1024px-ന് മുകളിൽ) */
-/* ... മുകളിലെ കോഡുകൾക്ക് ശേഷം ... */
-
 @media (min-width: 1024px) {
   .sidebar-container {
     position: sticky;
@@ -44,10 +35,9 @@
     top: 0;
     left: 0;
     transform: translateX(0) !important;
-    z-index: 50; /* ഡെസ്ക്ടോപ്പിൽ ബാക്ക്ഗ്രൗണ്ട് ഷാഡോ ആവശ്യമില്ലാത്തതുകൊണ്ട് കുറച്ചു */
+    z-index: 50;
   }
 
-  /* ഡെസ്ക്ടോപ്പിൽ സൈഡ്‌ബാർ ഫിക്സഡ് ആയി നിൽക്കാതെ കണ്ടന്റിനൊപ്പം ഇരിക്കാൻ */
   .sidebar-container.mobile-hide,
   .sidebar-container.mobile-show {
     transform: translateX(0) !important;
@@ -64,7 +54,6 @@
   }
 }
 
-/* മൊബൈൽ ട്രിഗർ ബട്ടൺ സ്റ്റൈൽ */
 .mobile-trigger {
   position: fixed;
   top: 15px;
@@ -79,7 +68,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Overlay / Backdrop */
 .sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -90,12 +78,11 @@
 
 .sidebar-expanded {
   width: 256px;
-} /* w-64 equivalent */
+}
 .sidebar-collapsed {
   width: 80px;
-} /* w-20 equivalent */
+}
 
-/* Header Styles */
 .sidebar-header {
   display: flex;
   align-items: center;
@@ -116,7 +103,7 @@
 .logo-box {
   width: 2rem;
   height: 2rem;
-  background-color: #6366f1; /* Indigo 500 */
+  background-color: #6366f1;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
@@ -149,7 +136,7 @@
   background-color: #374151;
 }
 
-/* Nav Section */
+/* Nav */
 .nav-links {
   flex: 1;
   padding-left: 0.75rem;
@@ -185,8 +172,6 @@
 .centered-item {
   justify-content: center;
 }
-
-/* --- YOUR ORIGINAL CSS STYLES (Keep as is) --- */
 
 .nav-item-new {
   display: flex;
